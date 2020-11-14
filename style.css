@@ -1,0 +1,7 @@
+nav a {
+    color: #007bff!important;
+}
+
+.card.sticky-top {
+    top: 40px!important;
+}
