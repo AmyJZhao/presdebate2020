@@ -19,6 +19,18 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
 </head>
+<style>
+    body {
+        background: url('covid.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* Workaround for some mobile browsers */
+        min-height: 100%;
+
+    }
+</style>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-light navbar-light">
@@ -47,60 +59,122 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col" style="padding: 30px 0px; text-align: center; border-bottom: 1px solid black"><h1>COVID-19</h1></div>
-        </div>
-        <div class="row">
-            
-            <div class="col-3" style="padding: 40px">
-                <div class="card sticky-top">
-                    <div class="card-body">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
-                    role="tab" aria-controls="v-pills-home" aria-selected="true">Introduction</a>
-                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
-                    role="tab" aria-controls="v-pills-profile" aria-selected="false">Rationale</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
-                    role="tab" aria-controls="v-pills-messages" aria-selected="false">Tweets</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
-                    role="tab" aria-controls="v-pills-settings" aria-selected="false">Limitations of Platform</a>
-                <a class="nav-link" id="v-pills-key-concepts-tab" data-toggle="pill"        
-                    href="#v-pills-key-concepts" role="tab" aria-controls="v-pills-key-concepts" aria-selected="false">Key Concepts</a>
+            <div class="col" style="padding: 30px 0px; text-align: center; border-bottom: 1px solid black">
+                <h1>COVID-19</h1>
             </div>
         </div>
-        </div>
-        </div>
-        <div class="col-9" style="padding: 40px 50px">
-            <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                    aria-labelledby="v-pills-home-tab">
-                    Covid-19 has developed into a global pandemic since the beginning of 2020. From the moment that the first case was found in the U.S. on January 20, the U.S. passed 200,000 deaths on September 22 (Chappell). On September 29, 7 days after the record breaking, both candidates participated in the discussion about the virus in the first presidential debate. Biden argued that “the president has no plan” to deal with the growing number of cases in the U.S., while Trump argued back that he is “doing a phenomenal job” against the virus. What we care about here is people’s reaction towards both candidates’ speech and to evaluate Twitter as a platform of recording the historical events for future use. 
-                </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                    aria-labelledby="v-pills-profile-tab">
-                    To investigate people’s reaction towards the discussion regarding Covid-19 in the first presidential debate, we used #debate2020 and #election2020 as hashtags. To filter out the tweets that are more relevant to Covid among millions of tweets that contain these hashtags, we used the advanced search function in Twitter. In the “Any of these words” session of the advanced search, we put “#debate2020 #election2020 Covid”, which provides us the tweets that contain any combination of these three keywords: it could be any one of them, any two of them or all of them. To obtain more influential results, we added a restriction that the tweets had to have more than 1,000 likes. Finally, since the first presidential debate was on September 29 and we observed a trend that real-time reactions usually grabbed more attention, we focused on the tweets that were posted from September 29, 2020 to October 3, 2020. 
+        <div class="row">
 
+            <div class="col-3" style="margin: 40px 0px 0px 0px">
+                <div class="card sticky-top">
+                    <div class="card-body">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">Introduction</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Rationale</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                                role="tab" aria-controls="v-pills-messages" aria-selected="false">Tweets</a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">Limitations</a>
+                            <a class="nav-link" id="v-pills-key-concepts-tab" data-toggle="pill"
+                                href="#v-pills-key-concepts" role="tab" aria-controls="v-pills-key-concepts"
+                                aria-selected="false">Key Concepts</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                    aria-labelledby="v-pills-messages-tab">
-                    The search result provides two perspectives as it contains tweets that support both candidates. Even though the number of tweets supporting each side is not balanced, it is unknown whether the bias is created by real data or users’ activities. Comments under these tweets, however, are more balanced. It is common to see arguments under a tweet, no matter which side the original tweet supports. 
+            </div>
+            
+            <div class="col-9" style="margin-top:40px; padding: 0px 30px 50px 50px">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                        <h2>Introduction</h2>
+                        &emsp;Covid-19 has developed into a global pandemic since the beginning of 2020. From the moment that
+                        the first case was found in the U.S. on January 20, the U.S. passed 200,000 deaths on September
+                        22 (Chappell). On September 29, 7 days after the record-breaking number of deaths, both
+                        candidates participated in the discussion about the virus in the first presidential debate. <br/>
 
-                </div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                    aria-labelledby="v-pills-settings-tab">
-                    With the acknowledgement of the need for a more massive dataset and a more professional analyzing tool than human analysts, we noticed that Twitter users receive biased feed based on their political opinions. If you are a supporter for one of the candidates or parties, it is harder to reach tweets that are in favor of the other. This results in consolidating people’s thoughts even more and it would be harder for anyone who wants to stay neutral or objective. It creates a world that you have to pick a side and put your root in it. However, this is an impact and it is not necessary to categorize it as a benefit or a limitation: it is beneficial for people as it is more convenient for them to obtain the information that they need, while it is harmful as it may block people’s sight at the same time. 
+                        &emsp;Biden argued that “the president has no plan” to deal with the growing number of cases in the
+                        U.S., while Trump argued back that he is “doing a phenomenal job” against the virus. <br /><br />
+                        <div style="text-align:center">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/p6h5D6vX6a4?start=28&end=39" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> <br /> 
+                        &emsp;What we
+                        care about here is people’s reaction towards both candidates’ speech and to evaluate Twitter as
+                        a platform of recording the historical events for future use.
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        <h2>Rationale for Searching Tweets</h2>
+                        &emsp;To investigate people’s reaction towards the discussion regarding Covid-19 in the first
+                        presidential debate, we used <strong style="color: #1da1f2">#debate2020</strong> and <strong style="color: #1da1f2">#election2020</strong> as hashtags. To filter out the tweets
+                        that are more relevant to Covid among millions of tweets that contain these hashtags, we used
+                        the advanced search function in Twitter. In the “Any of these words” session of the advanced
+                        search, we put “#debate2020 #election2020 Covid”, which provides us the tweets that contain any
+                        combination of these three keywords: it could be any one of them, any two of them or all of
+                        them. To obtain more influential results, we added a restriction that the tweets had to have
+                        more than 1,000 likes. Finally, since the first presidential debate was on September 29 and we
+                        observed a trend that real-time reactions usually grabbed more attention, we focused on the
+                        tweets that were posted from September 29, 2020 to October 3, 2020.
 
-                    However, we did notice a limitation of Twitter’s search engine when we used it to gather information: there were not just two perspectives regarding this topic and the search results blocked almost all the perspectives other than democrats (Biden) and republicans (Trump). Both the presidential debate and the Covid-19 issue are global topics. Not only Americans were paying attention to them and discussing them. The hashtags #debate2020 and #election2020 were the most popular ones, but they rarely included any other tweets except those that were posted by Americans. It is true that there is a filter for languages in the search engine, but the amount of data is significantly low for studying. Except for the reason that fewer people outside the US reacted to these topics, there is also another possibility that people who are native in other languages do not use an English hashtag. Even though they may have a discussion in another hashtag that is worth to be included in the study, it is almost impossible for the mass public to know and understand their opinions.
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        <h2>Different Perspectives</h2>
+                        <h4>As Seen via Tweets</h4>
+                        The search result provides two perspectives as it contains tweets that support both candidates.
+                        Even though the number of tweets supporting each side is not balanced, it is unknown whether the
+                        bias is created by real data or users’ activities. Comments under these tweets, however, are
+                        more balanced. It is common to see arguments under a tweet, no matter which side the original
+                        tweet supports.
 
-                </div>
-                <div class="tab-pane fade" id="v-pills-key-concepts" role="tabpanel"
-                    aria-labelledby="v-pills-key-concepts-tab">
-                    The way we search the tweets and try to understand the presidential debate as a historical event via social media (i.e. Twitter) does show how valuable the social media is as an ethical use and preservation of data (Galarza 792). Although it is a large database sufficient for research use, finding an efficient way to filter out information remains an issue. A lot of Twitter users’ tweets are too short or empty to provide any useful information. The brevity of tweets “encourages the kind of cryptic, condensed language associated with text messaging in general.” (Arceneanux 1268) The misunderstanding created by the brevity leads to unnecessary arguments/data. Therefore, finding useful data among people’s chatting tweets in such a huge database is definitely challenging and obscured. 
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        <h2>Limitations of Twitter</h2>
+                        &emsp;With the acknowledgement of the need for a more massive dataset and a more professional
+                        analyzing tool than human analysts, we noticed that Twitter users receive biased feeds based on
+                        their political opinions. If you are a supporter for one of the candidates or parties, it is
+                        harder to reach tweets that are in favor of the other. This results in consolidating people’s
+                        thoughts even more and it would be harder for anyone who wants to stay neutral or objective. It
+                        creates a world that you have to pick a side and put your root in it. However, this is an impact
+                        and it is not necessary to categorize it as a benefit or a limitation: it is beneficial for
+                        people as it is more convenient for them to obtain the information that they need, while it is
+                        harmful as it may block people’s sight at the same time.
+                        <br />
+                        &emsp;However, we did notice a limitation of Twitter’s search engine when we used it to gather
+                        information: there were not just two perspectives regarding this topic and the search results
+                        blocked almost all the perspectives other than democrats (Biden) and republicans (Trump). Both
+                        the presidential debate and the Covid-19 issue are global topics. Not only Americans were paying
+                        attention to them and discussing them. The hashtags #debate2020 and #election2020 were the most
+                        popular ones, but they rarely included any other tweets except those that were posted by
+                        Americans. It is true that there is a filter for languages in the search engine, but the amount
+                        of data is significantly low for studying. Except for the reason that fewer people outside the
+                        US reacted to these topics, there is also another possibility that people who are native in
+                        other languages do not use an English hashtag. Even though they may have a discussion in another
+                        hashtag that is worth to be included in the study, it is almost impossible for the mass public
+                        to know and understand their opinions.
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-key-concepts" role="tabpanel"
+                        aria-labelledby="v-pills-key-concepts-tab">
+                        <h2>Key Concepts from Class Readings</h2>
+                        &emsp;The way we search the tweets and try to understand the presidential debate as a historical event
+                        via social media (i.e. Twitter) does show how valuable the social media is as an ethical use and
+                        preservation of data (Galarza 792). Although it is a large database sufficient for research use,
+                        finding an efficient way to filter out information remains an issue. A lot of Twitter users’
+                        tweets are too short or empty to provide any useful information. The brevity of tweets
+                        “encourages the kind of cryptic, condensed language associated with text messaging in general.”
+                        (Arceneanux 1268) The misunderstanding created by the brevity leads to unnecessary
+                        arguments/data. Therefore, finding useful data among people’s chatting tweets in such a huge
+                        database is definitely challenging and obscured.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
-           
+
     </div>
 </body>
 
