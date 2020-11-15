@@ -1,7 +1,9 @@
 .card.sticky-top {
     top: 40px!important;
 }
-
+.navbar-brand {
+    color: #007bff!important;
+}
 body {
     color:#000; 
     font-family:georgia, serif; 
@@ -14,7 +16,12 @@ body {
   a:visited {color:#606;}
   a:hover {color:#606;}
   a:active {color:#900; outline:none;}
-  
+
+
+.navbar-nav a {color:rgb(209, 110, 110)!important;}
+.navbar-nav a:hover {color:#606!important;}
+.navbar-nav .active a {color:#B22234!important; outline:none;}
+
 .nav-link.active {
     background-color: #c00!important;
 }
